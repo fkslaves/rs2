@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -426,41 +426,6 @@
 			<a href="policy.html" target="_blank" class="footer-link">Zásady ochrany osobných údajov</a>
 		</small>
 	</div>
-	<script src="js\jquery.js"></script>
-<script src="js\main1.js"></script>
-<!-- Facebook Pixel Code -->
-<script>
- !function(f,b,e,v,n,t,s)
- {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
- n.callMethod.apply(n,arguments):n.queue.push(arguments)};
- if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
- n.queue=[];t=b.createElement(e);t.async=!0;
- t.src=v;s=b.getElementsByTagName(e)[0];
- s.parentNode.insertBefore(t,s)}(window, document,'script',
- 'https://connect.facebook.net/en_US/fbevents.js');
- 
- 
-</script>
-<noscript></noscript>
-<!-- End Facebook Pixel Code --><script>
-(function() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://leadrock.com/api/v2/validation/config?track_url=0' + '&domain=' + window.location.protocol + '//' + window.location.host, true);
-    xhr.withCredentials = true;
-    xhr.cache = false;
-    xhr.onload = function() {
-        var data = JSON.parse(xhr.responseText);
-        var trackId = '';
-        if (data.hasOwnProperty('macros') && data.macros.hasOwnProperty('track_id') && trackId !== '') {
-            data.macros.track_id = trackId;
-            }
-        if (data.is_enabled) {
-            LeadrockValidator.init(data);
-        }
-    };
-    xhr.send();
-})();
-</script>
 </body>
 
 </html>
